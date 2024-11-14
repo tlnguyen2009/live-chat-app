@@ -48,7 +48,7 @@ Follow these steps to set up and run the Live Chat Application on your local mac
 
 5. **Access the Application**
 
-    Open one web browser and navigate to *http://localhost:3000*. And open another tab and also navigate to *http://localhost:3000* again. Now, you can start using the Live Chat application by chatting between two windows.
+    Open one web browser and navigate to `http://localhost:3000`. And open another tab and also navigate to `http://localhost:3000` again. Now, you can start using the Live Chat application by chatting between two windows.
     
 ## Usage
 
