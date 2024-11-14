@@ -21,11 +21,6 @@ Follow these steps to set up and run the Live Chat Application on your local mac
    ```bash
    git clone https://github.com/tlnguyen2009/live-chat-app.git
    ```
-```
-git status
-git add
-git commit
-```
 
 2. **Navigate to the Project Directory**
 
