@@ -20,6 +20,7 @@ Follow these steps to set up and run the Live Chat Application on your local mac
 
    ```bash
    git clone https://github.com/tlnguyen2009/live-chat-app.git
+   ```
 
 2. **Navigate to the Project Directory**
 
@@ -27,6 +28,7 @@ Follow these steps to set up and run the Live Chat Application on your local mac
     
     ```bash    
     cd live-chat-app
+   ```
 
 3. **Install Dependencies**
 
@@ -34,14 +36,16 @@ Follow these steps to set up and run the Live Chat Application on your local mac
     
     ```bash    
     npm install
-    
+    ```
+
 4. **Start the Server**
     
     Launch the server with the following command:
 
     ```bash
     npm start
-    
+    ```
+
 5. **Access the Application**
 
     Open one web browser and navigate to *http://localhost:3000*. And open another tab and also navigate to *http://localhost:3000* again. Now, you can start using the Live Chat application by chatting between two windows.
