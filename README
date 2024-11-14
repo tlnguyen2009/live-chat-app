@@ -2,7 +2,7 @@
 
 A real-time chat application built with HTML, CSS, and JavaScript on the frontend, and Node.js with WebSockets on the backend. This application enables multiple users to communicate instantly, with messages neatly aligned to the sender's and receiver's sides.
 
-![Demo Image]()
+![Demo Image](/Images/live-chat-demo-img.png)
 
 ## Installation
 
