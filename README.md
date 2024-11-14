@@ -48,22 +48,22 @@ Follow these steps to set up and run the Live Chat Application on your local mac
 
 5. **Access the Application**
 
-    Open one web browser and navigate to `http://localhost:3000`. And open another tab and also navigate to `http://localhost:3000` again. Now, you can start using the Live Chat application by chatting between two windows.
+   Open one web browser and navigate to `http://localhost:3000`. And open another tab and also navigate to `http://localhost:3000` again. Now, you can start using the Live Chat application by chatting between two windows.
     
 ## Usage
 
    1. **Enter a Username:** *(Future feature, NOT updated yet)* <br />
-    When you open the application, you'll be prompted to enter a username. This name will appear next to your messages in the chat.
+    &nbsp;&nbsp;&nbsp;&nbsp;When you open the application, you'll be prompted to enter a username. This name will appear next to your messages in the chat.
 
    3. **Sending Messages:** <br />
-    Via Button: Type your message in the input field and click the "Send" button.<br />
-    Via Keyboard: Press the "Enter" key to send your message.<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;Via Button: Type your message in the input field and click the "Send" button.<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;Via Keyboard: Press the "Enter" key to send your message.<br />
 
    4. **Receiving Messages:** <br />
-   Messages from other users will appear on the left side of the chat window, while your messages will appear on the right.
+   &nbsp;&nbsp;&nbsp;&nbsp;Messages from other users will appear on the left side of the chat window, while your messages will appear on the right.
 
    5. **Scrolling:** <br />
-   If there are many messages, the chat window will become scrollable. It will automatically scroll to show the latest message.
+   &nbsp;&nbsp;&nbsp;&nbsp;If there are many messages, the chat window will become scrollable. It will automatically scroll to show the latest message.
     
 
 ## What I Learned from the project
@@ -71,15 +71,15 @@ Follow these steps to set up and run the Live Chat Application on your local mac
 Building the Live Chat Application was an enriching experience that deepened my understanding of real-time web technologies, server-client interactions, and efficient coding practices. Here are the key lessons I gathered from this project:
 
    1. **Using an HTTP Server with WebSockets:** <br />
-   Why It’s Needed: When creating a chat app, I used Express.js to set up a server that listens for incoming connections. Normally, app.listen(port) starts the server, but to add real-time features like WebSockets, I needed direct access to the underlying HTTP server. This is because WebSockets start as regular HTTP requests that then upgrade to a WebSocket connection. <br />
-   Simplifying Deployment: By using one server for both regular web pages and WebSocket connections, everything runs smoothly together. However, to handle more users across multiple servers, I realized I would need tools like RabbitMQ or Redis to manage messages between servers.
+   &nbsp;&nbsp;&nbsp;&nbsp;Why It’s Needed: When creating a chat app, I used Express.js to set up a server that listens for incoming connections. Normally, app.listen(port) starts the server, but to add real-time features like WebSockets, I needed direct access to the underlying HTTP server. This is because WebSockets start as regular HTTP requests that then upgrade to a WebSocket connection. <br />
+   &nbsp;&nbsp;&nbsp;&nbsp;Simplifying Deployment: By using one server for both regular web pages and WebSocket connections, everything runs smoothly together. However, to handle more users across multiple servers, I realized I would need tools like RabbitMQ or Redis to manage messages between servers.
 
    2. **Sending Data with WebSockets:** <br />
-   Working with JSON: I learned how to send data between the client and server by converting JavaScript objects into JSON strings. This makes the data easy to send and receive through WebSockets.
+   &nbsp;&nbsp;&nbsp;&nbsp;Working with JSON: I learned how to send data between the client and server by converting JavaScript objects into JSON strings. This makes the data easy to send and receive through WebSockets.
 
    3. **Handling Messages in JavaScript:** <br />
-   Asynchronous Processing: JavaScript can handle multiple messages at the same time without slowing down the application. Using event listeners, I was able to process each incoming message as it arrived. <br />
-   Fixing a Bug: I discovered a mistake where I compared a number (clientId from Date.now()) with a string (id from the received JSON). This always made the comparison return false. To fix it, I converted clientId to a string using Date.now().toString(), which allowed the comparison to work correctly.
+      &nbsp;&nbsp;&nbsp;&nbsp;Asynchronous Processing: JavaScript can handle multiple messages at the same time without slowing down the application. Using event listeners, I was able to process each incoming message as it arrived. <br />
+      &nbsp;&nbsp;&nbsp;&nbsp;Fixing a Bug: I discovered a mistake where I compared a number (clientId from Date.now()) with a string (id from the received JSON). This always made the comparison return false. To fix it, I converted clientId to a string using Date.now().toString(), which allowed the comparison to work correctly.
 
    4. **References:** <br />
 
