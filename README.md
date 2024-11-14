@@ -71,14 +71,14 @@ Follow these steps to set up and run the Live Chat Application on your local mac
 Building the Live Chat Application was an enriching experience that deepened my understanding of real-time web technologies, server-client interactions, and efficient coding practices. Here are the key lessons I gathered from this project:
 
    1. **Using an HTTP Server with WebSockets:** <br />
-   Why It’s Needed: When creating a chat app, I used Express.js to set up a server that listens for incoming connections. Normally, app.listen(port) starts the server, but to add real-time features like WebSockets, I needed direct access to the underlying HTTP server. This is because WebSockets start as regular HTTP requests that then upgrade to a WebSocket connection.
+   Why It’s Needed: When creating a chat app, I used Express.js to set up a server that listens for incoming connections. Normally, app.listen(port) starts the server, but to add real-time features like WebSockets, I needed direct access to the underlying HTTP server. This is because WebSockets start as regular HTTP requests that then upgrade to a WebSocket connection. <br />
    Simplifying Deployment: By using one server for both regular web pages and WebSocket connections, everything runs smoothly together. However, to handle more users across multiple servers, I realized I would need tools like RabbitMQ or Redis to manage messages between servers.
 
    2. **Sending Data with WebSockets:** <br />
    Working with JSON: I learned how to send data between the client and server by converting JavaScript objects into JSON strings. This makes the data easy to send and receive through WebSockets.
 
    3. **Handling Messages in JavaScript:** <br />
-   Asynchronous Processing: JavaScript can handle multiple messages at the same time without slowing down the application. Using event listeners, I was able to process each incoming message as it arrived.
+   Asynchronous Processing: JavaScript can handle multiple messages at the same time without slowing down the application. Using event listeners, I was able to process each incoming message as it arrived. <br />
    Fixing a Bug: I discovered a mistake where I compared a number (clientId from Date.now()) with a string (id from the received JSON). This always made the comparison return false. To fix it, I converted clientId to a string using Date.now().toString(), which allowed the comparison to work correctly.
 
    4. **References:** <br />
